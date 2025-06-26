@@ -42,11 +42,31 @@ def squre(num):
 squre(4)
 squre(3)
 
+def square(n):
+	n=n*n 
+	return n 
+print(square(10))
+"""enven and odd test"""
+def  even_odd(num):
+	if num % 2==0:
+		print(num,"is even number")
+	else:
+		print(num,"is odd number")
+print(even_odd(3))
+print(even_odd(4))
 
 
+"""concatenate string"""
+def fulname(firstname,midlename,lastname):
+	fulname="{} {} {}".format(firstname,midlename,lastname)
+	print(fulname)
+print(fulname("ali","hamza","khan"))
 
+def fulname(firstname,lastname,midlenmae):
+	fulname="{},{},{}".format(firstname,midlenmae,lastname)
+	print(fulname)
 
-
-
+print(fulname(lastname="ali" ,midlenmae="khan" ,firstname="usman"))
+ 
 
 
