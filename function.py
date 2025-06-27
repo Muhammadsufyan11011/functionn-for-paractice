@@ -70,3 +70,46 @@ print(fulname(lastname="ali" ,midlenmae="khan" ,firstname="usman"))
  
 
 
+
+
+
+def add_numbers(a,b):
+ 	result=a+b 
+ 	return result
+sum=add_numbers(5,3)
+print("sum is :",sum)
+
+
+def my_name(firstname):
+
+	print("Mera name sufyan hy or :",firstname)
+
+my_name("ali")
+
+
+def greet_user(name):
+	print("Assalam o alikum,",name)
+user_name=input("Apna name lekho:")
+greet_user("Ahmad")
+
+def calculator(a,b,operation):
+	if operation == "add":
+		return a + b
+	elif operation == "subtract":
+		return a - b
+	elif operation == "multiply":
+		return a * b 
+	elif operation == "divide":
+		if b != 0:
+			return a/b
+		else:
+			return "Division by zero is not allowed "
+	else:
+		return "Invalid operation"
+num1=10
+num2=5
+result= calculator(num1,num2,"add")
+print("Result:",result)
+print(calculator(12,4,"subtract"))
+print(calculator(6,3,"multiply"))
+print(calculator(8,2,("divide")))
